@@ -1,0 +1,42 @@
+<section class="behavior">
+    <h2 class="mt-5 mb-5">พฤติกรรมการใช้งาน</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <label for="">4.คุณใช้งานในด้านใด (อันดับ 1 มากที่สุด) : </label>
+                {% for i in behavior %}
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="behavior_1" value={{i[1]}} id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{i[0]}}
+                    </label>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-sm">
+                <label for="">5.คุณใช้งานในด้านใด (อันดับ 2) : </label>
+                {% for i in behavior %}
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="behavior_2"  value={{i[1]}} id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{i[0]}}
+                    </label>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-sm">
+                <label for="">6.คุณใช้งานในด้านใด (อันดับ 3) : </label>
+                {% for i in behavior %}
+                <div class="form-check"> 
+                    <input class="form-check-input" type="radio" name="behavior_3" value={{i[1]}} id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{i[0]}}
+                    </label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- Container -->
+</section>

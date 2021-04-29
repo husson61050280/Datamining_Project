@@ -1,0 +1,70 @@
+<section class="temp">
+    <h2 class="mt-5 mb-5">ความร้อนจากตัวเครื่อง</h2>
+
+    <label for="">23.ระดับที่สามารถยอมรับได้ เมื่อมีอุณหภูมิขณะเล่นเกมส์ : </label>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 mt-4">
+                <p>น้อย</p>
+            </div>
+            {% for i in range(1,6) %}
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="temp_1"  value={{i}} id="flexRadioDefault1" reuired>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{i}}
+                    </label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-1 mt-4">
+                <p>มาก</p>
+            </div>
+        </div>
+    </div>
+
+    <label for="">24.ระดับที่สามารถยอมรับได้ เมื่อมีอุณหภูมิขณะใช้งานกล้อง : </label>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 mt-4">
+                <p>น้อย</p>
+            </div>
+            {% for i in range(1,6) %}
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="temp_2"  value={{i}} id="flexRadioDefault1" reuired>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{i}}
+                    </label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-1 mt-4">
+                <p>มาก</p>
+            </div>
+        </div>
+    </div>
+
+    <label for="">25.ระดับที่สามารถยอมรับได้ เมื่อมีอุณหภูมิขณะใช้งานระบบนำทาง : </label>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 mt-4">
+                <p>น้อย</p>
+            </div>
+            {% for i in range(1,6) %}
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="temp_3" value={{i}} id="flexRadioDefault1" reuired>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{i}}
+                    </label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-1 mt-4">
+                <p>มาก</p>
+            </div>
+        </div>
+    </div>
+
+</section>

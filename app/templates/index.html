@@ -1,0 +1,31 @@
+{% include 'Header.html' %}
+
+<div class="container mt-5">
+    <form action="{{ url_for('predict') }}" method="post" class="form-group">
+
+        <!-- General Section -->
+        {% include './section/general.html' %}
+        <!-- Behavior Section -->
+        {% include './section/behavior.html' %}
+        <!-- Price Section -->
+        {% include './section/price.html' %}
+        <!-- Camera Section -->
+        {% include './section/camera.html' %}
+        <!-- body smartphone Section -->
+        {% include './section/body.html' %}
+        <!-- Gps section -->
+        {% include './section/gps.html' %}
+        <!-- screen section -->
+        {% include './section/screen.html' %}
+        <!-- performance section -->
+        {% include './section/performance.html' %}
+        <!-- temperature section -->
+        {% include './section/temp.html' %}
+        <!-- battery section -->
+        {% include './section/battery.html' %}
+
+        <input type="submit" class="btn btn-success" value="Predict">
+    </form>
+</div>
+
+{% include 'Footer.html' %}

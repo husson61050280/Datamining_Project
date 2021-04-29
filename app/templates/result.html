@@ -1,0 +1,32 @@
+{% include 'Header.html' %}
+
+<div class="container mt-5" align="center">
+    <h3>Result : {{output}}</h3>
+    {% if output == "Samsung Galaxy Note20" %}
+    <div class="img">
+        <img src="../static/img/galaxy_note20.jpg" width="500px" height="600px" alt="">
+        <h3>Price: 33,990 บาท</h3>
+    </div>
+
+    {% elif output == "IPhone 11" %}
+    <div class="img">
+        <img src="../static/img/iphone11.png" width="500px" height="600px" alt="">
+        <h3>Price: 22,100 บาท</h3>
+    </div>
+
+    {% elif output == "IPhone XR" %}
+    <div class="img">
+        <img src="../static/img/iphoneXR.png" width="500px" height="600px" alt="">
+        <h3>Price: 18,400 บาท</h3>
+    </div>
+
+    {% elif output == "Samsung Galaxy S21 Ultra 5G" %}
+    <div class="img">
+        <img src="../static/img/galaxy_s21.jpg" width="500px" height="600px" alt="">
+        <h3>Price: 39,900 บาท</h3>
+    </div>
+
+    {% endif %}
+</div>
+
+{% include 'Footer.html' %}

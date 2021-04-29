@@ -1,0 +1,70 @@
+
+<section class="body_phone">
+    <h2 class="mt-5 mb-5">ภาพลักษณ์ของตัวเครื่อง (คุณให้ความสำคัญกับสิ่งใดต่อไปนี้)</h2>
+
+    <label for="">15.วัสดุตัวเครื่อง  : </label>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 mt-4">
+                <p>น้อย</p>
+            </div>
+            {% for i in range(1,6) %}
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="body_1" value={{i}} id="flexRadioDefault1" required>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{i}}
+                    </label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-1 mt-4">
+                <p>มาก</p>
+            </div>
+        </div>
+    </div>
+
+    <label for="">16.ความสวยงาม  : </label>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 mt-4">
+                <p>น้อย</p>
+            </div>
+            {% for i in range(1,6) %}
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="body_2" value={{i}} id="flexRadioDefault1" required>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{i}}
+                    </label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-1 mt-4">
+                <p>มาก</p>
+            </div>
+        </div>
+    </div>
+
+    <label for="">17.ความสะดวกในการพกพา  : </label>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 mt-4">
+                <p>น้อย</p>
+            </div>
+            {% for i in range(1,6) %}
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="body_3" value={{i}} id="flexRadioDefault1" required>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{i}}
+                    </label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-1 mt-4">
+                <p>มาก</p>
+            </div>
+        </div>
+    </div>
+</section>
